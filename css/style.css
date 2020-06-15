@@ -455,6 +455,73 @@ body {
   opacity: 1;
 }
 
+.b-owner__inner {
+  display: flex;
+}
+
+.b-owner {
+  margin-top: 135px;
+}
+
+.b-owner__card {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.b-owner__name {
+  font-size: 26px;
+  line-height: 1.23;
+  font-weight: 700;
+  color: #061b35;
+}
+
+.b-owner__post {
+  margin-top: 5px;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.b-owner__mail {
+  margin-bottom: 28px;
+  color: #ba3e5a;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.b-owner__title {
+  margin-top: 28px;
+  font-size: 18px;
+  line-height: 1.55;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 700;
+  color: #061b35;
+}
+
+.b-owner__text {
+  margin-top: 28px;
+  font-size: 18px;
+  line-height: 1.55;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
+  color: #061b35;
+}
+.b-owner__text li {
+  list-style: disc;
+}
+
+.b-owner__list {
+  margin-left: 20px;
+}
+
+.b-owner__social {
+  margin-top: 135px;
+  text-align: center;
+}
+.b-owner__social a {
+  margin: 5px;
+}
+
 @keyframes opacityBg {
   100% {
     opacity: 1;
