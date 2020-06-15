@@ -15,6 +15,7 @@ scroller
     // { element, index, direction }
   });
 
+
 // setup resize event
 window.addEventListener("resize", scroller.resize);
 
@@ -53,7 +54,14 @@ myMapArchangelsk.geoObjects.add(myPlacemarkArch);
 
 
 $(document).ready(function(){
-    
+
+$('.b-reviews__slick').slick({
+  infinite: true,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+    autoplay: true,
+  autoplaySpeed: 2000,
+});
 });
 
 
