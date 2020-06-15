@@ -647,7 +647,7 @@ body {
 
 .b-blog__button {
   cursor: pointer;
-  font-size: 18px;
+  font-size: 16px;
   padding: 1em 1.5em;
   line-height: 1.35;
   font-weight: 700;
@@ -660,9 +660,10 @@ body {
   min-width: 200px;
   border: 1px solid #4e5663;
   transition: 0.3s;
+  text-transform: uppercase;
 }
 .b-blog__button:hover {
-  background-color: #061762;
+  background-color: #1D416D;
   color: #fff;
 }
 
