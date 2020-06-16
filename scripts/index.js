@@ -27,7 +27,7 @@ window.addEventListener("resize", scroller.resize);
     });
 
     var myMapArchangelsk = new ymaps.Map("YMapsIDArch",{
-      center: [64.547466, 40.519698],
+      center: [64.547330, 40.519795],
       zoom: 14
     });
 
