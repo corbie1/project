@@ -77,15 +77,15 @@ $('.b-reviews__slick').slick({
   infinite: true,
   slidesToShow: 2,
   slidesToScroll: 1,
-    autoplay: true,
+  
+  // autoplay: true,
   autoplaySpeed: 2000,
   responsive: [
-   
+      
       {
-      breakpoint: 600,
+      breakpoint: 979,
       settings: {
                 slidesToShow: 1,
-
             }
     }
   

@@ -376,7 +376,6 @@ body {
 }
 
 .b-advantages__card {
-  margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 90px;
   width: calc(100%3);
@@ -830,16 +829,28 @@ body {
   max-width: 780px;
 }
 
+.b-popup__title {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.b-popup__subtitle {
+  padding-top: 30px;
+  font-size: 20px;
+}
+
 #form-1 {
+  text-align: center;
   color: #000F46;
   padding: 63px 29px;
-  width: 530px;
+  width: 600px;
   margin: 30px auto;
   background-color: #fff;
 }
 #form-1 textarea {
   resize: none;
   width: 100%;
+  height: 70px;
   border: 1px solid #000;
 }
 #form-1 input {
@@ -847,10 +858,32 @@ body {
   width: 100%;
 }
 
+.b-popup__text {
+  text-align: center;
+}
+
+.b-popup__fields {
+  text-align: left;
+}
+
+.b-popup__field {
+  padding-top: 20px;
+  font-size: 18px;
+}
+.b-popup__field p {
+  padding-bottom: 5px;
+}
+.b-popup__field .form {
+  padding: 10px;
+}
+
 .checkbox {
   line-height: 24px;
   font-size: 16px;
   box-sizing: border-box;
+}
+.checkbox a {
+  color: #000F46;
 }
 
 .checkbox input[type=checkbox] {
@@ -915,7 +948,61 @@ body {
   border-bottom: 1px solid;
 }
 
+.b-questions {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.b-questions__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.b-questions__title {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.b-questions__subtitle {
+  padding-top: 30px;
+  font-size: 20px;
+  width: 400px;
+  text-align: center;
+}
+
+.slick-dots li button:before {
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "•";
+  /* <-- Вот этот символ */
+  text-align: center;
+  opacity: 0.25;
+  color: black;
+}
+
+@media screen and (max-width: 1335px) {
+  .b-services__card {
+    width: calc(100%/2 - 40px);
+  }
+
+  .b-advantages__card {
+    width: calc(100%/3);
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
 @media screen and (max-width: 979px) {
+  .b-reviews__item {
+    width: 100%;
+  }
+
   .b-director__text {
     right: 5%;
   }
@@ -939,6 +1026,10 @@ body {
     text-align: center;
   }
 
+  .b-blog__img {
+    width: 80%;
+  }
+
   .b-reviews {
     margin-left: 10%;
   }
@@ -959,7 +1050,7 @@ body {
   .b-services__card {
     margin-right: auto;
     margin-left: auto;
-    width: 80%;
+    width: calc(100% - 50px);
   }
   .b-services__card:hover .card__list {
     opacity: 1;
@@ -1105,10 +1196,6 @@ body {
 
   .b-article__other {
     margin-top: 50px;
-  }
-
-  .b-blog__img {
-    max-width: 340px;
   }
 
   .b-article__post {
