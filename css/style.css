@@ -407,11 +407,14 @@ body {
   max-width: 560px;
 }
 
-.b-advantages__social {
+.b-social {
+  fill: #1d416d;
+  height: auto;
+  padding-bottom: 50px;
   opacity: 0;
   text-align: center;
 }
-.b-advantages__social img {
+.b-social img {
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -572,7 +575,7 @@ body {
   height: 80px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../img/iconfinder_f10d_213175.png);
+  background-image: url(../img/iconfinder_f10d_213175-blue.png);
 }
 
 .b-reviews__title {
@@ -630,11 +633,11 @@ body {
 }
 
 .b-blog__article {
-  width: calc(100%/3);
+  width: calc(100%/2);
 }
 
 .b-blog__img {
-  width: 370px;
+  width: 95%;
   height: auto;
   transition: 0.5s;
 }
@@ -648,6 +651,9 @@ body {
 }
 
 .b-blog__name {
+  max-width: 95%;
+  width: auto;
+  height: auto;
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 24px;
@@ -660,24 +666,25 @@ body {
   color: #1D416D;
 }
 
-.b-blog__button {
+.button {
+  background-color: #fff;
   cursor: pointer;
   font-size: 16px;
   padding: 1em 1.5em;
   line-height: 1.35;
   font-weight: 700;
-  color: #666;
+  color: #1c3f69;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
   min-height: 50px;
   min-width: 200px;
-  border: 1px solid #4e5663;
+  border: 3px solid #1c3f69;
   transition: 0.3s;
   text-transform: uppercase;
 }
-.b-blog__button:hover {
+.button:hover {
   background-color: #1D416D;
   color: #fff;
 }
@@ -738,7 +745,174 @@ body {
 
 .b-grid__article {
   margin-bottom: 50px;
-  width: calc(100%/3);
+  width: calc(100%/2);
+}
+
+.b-footer {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  height: 130px;
+  width: 100%;
+  background-color: #1f4068;
+}
+.b-footer a {
+  color: #fff;
+}
+
+.b-footer__inner {
+  text-align: center;
+  justify-content: space-between;
+  display: flex;
+  max-width: 1820px;
+}
+
+.b-footer__links {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  width: 53%;
+}
+
+.b-footer__menu {
+  display: flex;
+  flex-direction: column;
+}
+.b-footer__menu ul {
+  justify-content: space-between;
+  min-width: 300px;
+  display: flex;
+}
+
+.menu__item {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.social--links {
+  display: flex;
+}
+.social--links a img {
+  margin-right: 10px;
+  width: 25px;
+  height: auto;
+}
+
+.b-footer__social {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.b-footer--bottom {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.b-policy__inner {
+  padding-top: 120px;
+}
+
+.b-policy__title {
+  font-size: 28px;
+}
+
+.b-policy__inner p {
+  font-size: 16px;
+  padding-top: 15px;
+}
+
+.b-policy {
+  padding-bottom: 35px;
+}
+
+.b-policy__inner {
+  max-width: 780px;
+}
+
+#form-1 {
+  color: #000F46;
+  padding: 63px 29px;
+  width: 530px;
+  margin: 30px auto;
+  background-color: #fff;
+}
+#form-1 textarea {
+  resize: none;
+  width: 100%;
+  border: 1px solid #000;
+}
+#form-1 input {
+  border: 1px solid #000;
+  width: 100%;
+}
+
+.checkbox {
+  line-height: 24px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.checkbox input[type=checkbox] {
+  opacity: 0;
+}
+
+.checkbox label {
+  position: relative;
+  display: inline-block;
+  padding-left: 27px;
+  /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
+}
+
+.checkbox label::before,
+.checkbox label::after {
+  position: absolute;
+  content: "";
+  /*Needed for the line-height to take effect*/
+  display: inline-block;
+}
+
+/*Outer box of the fake checkbox*/
+.checkbox label::before {
+  background-color: #Fff;
+  height: 16px;
+  width: 16px;
+  border: 1px solid;
+  left: -3px;
+  /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
+   *to vertically center it.
+   */
+  top: 3px;
+}
+
+/*Checkmark of the fake checkbox*/
+.checkbox label::after {
+  height: 5px;
+  width: 9px;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  transform: rotate(-45deg);
+  left: 0px;
+  top: 7px;
+}
+
+/*Hide the checkmark by default*/
+.checkbox input[type=checkbox] + label::after {
+  content: none;
+}
+
+/*Unhide on the checked state*/
+.checkbox input[type=checkbox]:checked + label::after {
+  content: "";
+}
+
+/*Adding focus styles on the outer-box of the fake checkbox*/
+.checkbox input[type=checkbox]:focus + label::before {
+  outline: #3b99fc auto 5px;
+}
+
+.checkbox__link {
+  border-bottom: 1px solid;
 }
 
 @media screen and (max-width: 979px) {
