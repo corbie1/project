@@ -774,6 +774,7 @@ body {
 
 .b-article__paragraph--extra {
   color: #86003d;
+  font-style: italic;
   margin-bottom: 10px;
 }
 .b-article__paragraph--extra a {
