@@ -64,7 +64,7 @@ body{
 	    margin-left: 20px;
 	 	font-size: 20px;
     	font-weight: 300;
-	a{
+		a{
 		color: #2e2e2e;
 		opacity: .5;
 		transition: .3s;
@@ -76,7 +76,19 @@ body{
 		opacity: 1;
 	}
 }
-
+.lang--ru {
+	position: relative;
+	padding-right: 5px;
+	&:after{
+		height: 100%;
+		content: '';
+		width: 2px;
+		background-color: #2e2e2e;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
 .nav__item{
 	position: relative;
 	margin-left: 35px;
