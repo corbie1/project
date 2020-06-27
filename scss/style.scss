@@ -26,7 +26,7 @@ body{
 	.header__inner{
 		padding-right: 30px;
 		padding-left: 30px;
-
+		align-items: center;
 		max-width: 1820px;
 		padding-top: 10px;
 		width: 100%;
@@ -43,15 +43,16 @@ body{
 	}
 }
 .nav__menu{
-		padding-top: 25px;
 		display: flex;
 }
 .header__inner{
+
 	display: flex;
 	justify-content: space-between;
 }
 .b-social--header{
 	display: flex;
+	align-items: center;
 	img{
 		width: 40px;
 		margin: 10px;
@@ -60,7 +61,6 @@ body{
 }
 
 .header__lang{
-	    padding-top: 25px;	
 	    margin-left: 20px;
 	 	font-size: 20px;
     	font-weight: 300;
@@ -76,9 +76,12 @@ body{
 		opacity: 1;
 	}
 }
+.lang{
+	padding-right: 10px;
+	padding-left: 5px;
+}
 .lang--ru {
 	position: relative;
-	padding-right: 5px;
 	&:after{
 		height: 100%;
 		content: '';
@@ -240,7 +243,7 @@ body{
     text-align: center;
 }
 
-.page__text{
+.page__subtitle{
 	margin-right: auto;
     margin-left: auto;
     margin-bottom: 70px;
@@ -398,6 +401,14 @@ margin-bottom: 20px;
 	background-color: #1d416d;
 
 }
+#YMapsIDMoscow{
+	max-width: 952px;
+	 height: 447px;
+}
+#YMapsIDArch{
+	max-width: 952px;
+	height: 447px;
+}
 .b-contact__info{
 	font-size: 20px;
     line-height: 28px;
@@ -507,34 +518,35 @@ margin-bottom: 20px;
 	margin-top: 100px;
 }
 .b-reviews__photo{
-	width: 100px;
+	width: 70px;
 	border-radius: 100px;
-	height: 100px;
+	height: 70px;
 	margin-right: 20px;
 }
 .b-reviews__text{
 	flex-grow:1;
-	max-width: 550px;
+	max-width: 500px;
 	font-size: 16px;
     line-height: 1.55;
     &:before{
 		position: absolute;
-		top: 0;
+		top: -6px;
+		left: -20px;
 		z-index: 2;
 		content: '';
-		width: 80px;
-		height: 80px;
+		width: 50px;
+		height: 50px;
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-image: url(../img/iconfinder_f10d_213175-blue.png);
 	}
 }
 .b-reviews__people{
-	margin-top: 15px;
+	align-items: center;
+	margin-top: 30px;
 	display: flex;
 }
 .b-reviews__content{
-	min-height: 270px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -542,11 +554,13 @@ margin-bottom: 20px;
 .b-reviews__item{
 	margin: 1.5rem;
 	flex-direction: column;
-	padding-top: 100px;
+	padding-top: 60px;
 	position: relative;
 	display: flex;
 	
 }
+
+
 .b-reviews__title{
 	margin-right: auto;
     margin-left: auto;
@@ -559,7 +573,6 @@ margin-bottom: 20px;
     text-align: center;
 }
 .b-reviews__name{
-	    margin-top: 20px;
 
     font-size: 18px;
     line-height: 1.55;
@@ -573,6 +586,32 @@ margin-bottom: 20px;
     color: #666;
     font-size: 16px;
     line-height: 1.55;
+}
+.dot{
+	width: 8px;
+	height: 8px;
+	background-color: #b2b2b2;
+	border-radius: 50%;
+
+
+}
+.slick-dots{
+	display: flex!important;
+	align-items: center;
+	bottom: -40px;
+	justify-content: center;
+	li{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+.slick-active{
+	.dot{
+			width:10px;
+	height: 10px;
+	background-color: #fff;
+	border: 1px solid #ff2b58;
+	}
 }
 
 .b-blog{
@@ -827,7 +866,7 @@ margin-bottom: 20px;
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-top: 20px;
-	height: 110px;
+	min-height: 110px;
 	width: 100%;
 	background-color: #1f4068;
 	a{
@@ -843,8 +882,10 @@ margin-bottom: 20px;
 	
 }
 .b-footer__logo{
+	img{
 	width: 180px;
 	height: auto;
+	}
 }
 .b-footer__links{
 	justify-content: space-between;
@@ -1117,7 +1158,9 @@ margin-bottom: 20px;
 	font-size: 8px;
 }
 @media screen and (max-width: 1335px){
-
+.b-director__text{
+	right: 5%;
+}
 	.b-services__card{
 		width: calc(100%/2 - 40px);
 	&:hover .card__list{
@@ -1151,9 +1194,7 @@ margin-bottom: 20px;
 .b-social--header{
 	visibility: hidden;
 }
-.b-director__text{
-	right: 5%;
-}
+
 .b-advantages__card {
      width: 100%;
   	}
@@ -1167,9 +1208,6 @@ margin-bottom: 20px;
 }
 .b-blog{
 	text-align: center;
-}
-.b-blog__img {
-	width:80%;
 }
 .b-blog__name{
 	max-width: none;
@@ -1219,13 +1257,20 @@ margin-bottom: 20px;
 
 #menu__toggle:checked ~ .menu__btn > span {
   transform: rotate(45deg);
+  background-color: #fff;
+  
 }
 #menu__toggle:checked ~ .menu__btn > span::before {
   top: 0;
+  background-color: #fff;
+ 
+
   transform: rotate(0);
 }
 #menu__toggle:checked ~ .menu__btn > span::after {
   top: 0;
+  background-color: #fff;
+
   transform: rotate(90deg);
 }
 #menu__toggle:checked ~ .menu__box {
@@ -1260,6 +1305,7 @@ margin-bottom: 20px;
 
   transition-duration: .25s;
 }
+
 .menu__btn > span::before {
   content: '';
   top: -8px;
@@ -1281,7 +1327,7 @@ margin-bottom: 20px;
   margin: 0;
   padding: 80px 0;
   list-style: none;
-  background-color: #000;
+  background-color: #1c3f69;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
   transition-duration: .25s;
 }
@@ -1370,10 +1416,26 @@ width: auto;
 }
 
 @media screen and (max-width: 768px){
+		.b-blog{
+    padding-top: 50px;
+	}
+	.b-reviews{
+    margin-top: 50px;
+	}
+	.b-questions{
+    margin-top: 50px;
+
+	}
+	.b-services{
+    padding-top: 50px;
+	}
+	.b-advantages{
+		padding-top: 50px;
+	}
 	.b-director__text{
 		margin-top: 80px;
 	}
-	.page__text{
+	.page__subtitle{
 		font-size: 18px;
 		max-width: none;
 		margin-right: 20px;
@@ -1388,23 +1450,64 @@ width: auto;
 		padding-bottom: 30px;
 	}
 	.b-contact__info *{
-	margin-left: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.b-contact__info--adress{
+	padding-top: 20px;
+
+}
+.b-contact__info--time{
+	padding-bottom: 20px;
 }
 .callback__popup{
 	max-width: 530px;
 	width: auto;
 }
 .b-contact__info{
-	font-size: 16px;
 }
+.b-footer__menu{
+	text-align: left
+}
+.menu__item{
+	padding-left: 0;
+}
+.b-footer__inner{
+	align-items: baseline;
+}
+.b-contact__inner{
+	flex-direction: column;
+}
+.b-contact__card:nth-child(3){
+	order: 4;
+}
+.b-contact__card{
+	width: 100%;
+}
+
 }
 
 @media screen and (max-width: 479px){
+
+	.card__title{
+		 padding-bottom: 20px;
+		 &:after{
+		 }
+	}
+	.card__list{
+		font-size: 14px;
+	}
 .menu__item{
 display: none;
 }
-.b-footer__links{
-	flex-direction: column-reverse;
+
+.b-footer__inner {
+	align-items: center;
+    flex-direction: column-reverse;
+}
+.b-footer__menu{
+	text-align: center;
 }
 }
 

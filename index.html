@@ -7,7 +7,6 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" type="text/css" href="css/slick.css">
-	<link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -31,8 +30,8 @@
 					<a href="https://vk.com/prlfru"><img src="img/vk.svg"></a>
 					<a href="https://www.instagram.com/prlf.ru/"><img src="img/insta.svg"></a>
 					<div class="header__lang">
-						<a class="lang--ru lang--active" href="index.html">RU</a>
-						<a class="lang--eng" href="#">EN</a>
+						<a class="lang lang--ru lang--active" href="index.html">RU</a>
+						<a class="lang lang--eng" href="#">EN</a>
 					</div>
 				</div>
 		</div>
@@ -68,7 +67,7 @@
 	<div id="practice" class="b-services block">
 		<div class="b-services__inner block__inner">
 			<div class="b-services__title page__title">"Проектные решения" — юридические услуги в сфере B2B</div>
-			<div class="b-services__text page__text">
+			<div class="b-services__text page__subtitle">
 				Готовы помочь вам по различным вопросам. Ниже представлен перечень основных наших сфер компетенций
 			</div>
 			<div class="b-services__cards">
@@ -145,7 +144,7 @@
 	<div id="about" class="b-advantages block">
 		<div class="b-advantages__inner block__inner step"  data-step="b">
 			<div class="b-advantages__title page__title">Наши преимущества</div>
-			<div class="b-advantages__text page__text">
+			<div class="b-advantages__text page__subtitle">
 				Клиенты доверяют нам в самых сложных вопросах, потому что знают, что мы поможем им снизить риски для бизнеса.
 			</div>
 			<div class="b-advantages__cards">
@@ -185,7 +184,7 @@
 	<div id="blog" class="b-blog block">
 		<div class="b-blog__inner block__inner ">
 			<div class="b-blog__title page__title">Блог</div>
-			<div class="b-blog__subtitle page__text">Новостные обзоры законодательства и судебной практики нашей фирмы</div>
+			<div class="b-blog__subtitle page__subtitle">Новостные обзоры законодательства и судебной практики нашей фирмы</div>
 			<div class="b-blog__news">
 				<div class="b-blog__article">
 					<a href="article.html"><img class="b-blog__img" src="img/news.png">
@@ -204,6 +203,7 @@
 	<div class="b-reviews block">
 		<div class="b-reviews__inner block__inner">
 			<div class="b-reviews__title page__title">Отзывы</div>
+			<div class="b-reviews__subtitle page__subtitle">Честные отзывы наших клиентов</div>
 			<div class="b-reviews__slick">
 				<div class="b-reviews__item">
 					<div class="b-reviews__content">
@@ -274,7 +274,7 @@
 		</div>
 		<div class="b-contact__inner">
 			<div class="b-contact__card">
-				<div id="YMapsIDMoscow" style="max-width: 952px; height: 447px;"></div>
+				<div id="YMapsIDMoscow"></div>
 			</div>
 			<div class="b-contact__card">
 				<div class="b-contact__info">
@@ -294,7 +294,7 @@
 				</div>
 			</div>
 			<div class="b-contact__card">
-				<div id="YMapsIDArch" style="max-width: 952px; height: 447px;"></div>
+				<div id="YMapsIDArch"></div>
 			</div>
 		</div>
 	</div>
@@ -304,7 +304,7 @@
 	<div class="b-questions block">
 		<div class="b-questions__inner block__inner">
 			<div class="b-questions__title page__title">Остались вопросы?</div>
-			<div class="b-questions__subtitle page__text">Вы всегда можете задать любой интересующий вас вопрос, и главное получить на него ответ</div>
+			<div class="b-questions__subtitle page__subtitle">Вы всегда можете задать любой интересующий вас вопрос, и главное получить на него ответ</div>
 			<button class="b-questions__button popupTrigger button">Задать вопрос</button>
 		</div>
 	</div>
@@ -315,7 +315,9 @@
 
 	<div class="b-footer">
 		<div class="b-footer__inner">
-			<img class="b-footer__logo" src="img/logo-bely.png">
+			<a class="b-footer__logo" href="index.html">
+				<img src="img/logo-bely.png">
+			</a>
 			<div class="b-footer__menu">
 					<ul>
 					<li class="menu__item"><a href="index.html#about">Компания</a></li>

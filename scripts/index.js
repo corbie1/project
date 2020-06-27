@@ -63,7 +63,10 @@ $('.b-reviews__slick').slick({
   slidesToShow: 2,
   slidesToScroll: 1,
   dots: true,
-  autoplay: true,
+  autoplay: false,
+   customPaging : function(slider, i) {
+                return '<div class="dot"></div>';
+                },
   autoplaySpeed: 2000,
   responsive: [
       
@@ -77,7 +80,6 @@ $('.b-reviews__slick').slick({
   ]
 });
 });
-
 
 
 jQuery(function($) {
