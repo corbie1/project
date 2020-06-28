@@ -946,10 +946,6 @@ body {
   justify-content: center;
 }
 
-.b-grid {
-  margin-bottom: 100px;
-}
-
 .b-grid__article {
   width: calc(100%/2 - 40px);
 }

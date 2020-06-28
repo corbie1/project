@@ -851,6 +851,7 @@ margin-bottom: 20px;
 
 .b-grid{
 	margin-top: 120px;
+
 }
 
 .b-grid__inner{
@@ -858,9 +859,7 @@ margin-bottom: 20px;
 	flex-wrap: wrap;
 	justify-content: center;
 }
-.b-grid{
-	margin-bottom: 100px;
-}
+
 .b-grid__article{
 	width: calc(100%/2 - 40px);
 	&:nth-child(odd){
