@@ -80,6 +80,8 @@ $('.b-reviews__slick').slick({
   ]
 });
 });
+var intViewportHeight = window.innerHeight;
+
 
 
 jQuery(function($) {
@@ -90,7 +92,7 @@ jQuery(function($) {
 
     // поворот экрана 
     window.addEventListener('orientationchange', function () {
-        navHeight = nav.outerHeight();
+      navHeight = nav.outerHeight();
     }, false);
     $(window).on('scroll', function () {
         const position = $(this).scrollTop();

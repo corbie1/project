@@ -61,7 +61,6 @@ body{
 }
 
 .header__lang{
-	    margin-left: 20px;
 	 	font-size: 20px;
     	font-weight: 300;
 		a{
@@ -637,11 +636,17 @@ margin-bottom: 20px;
 
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
 }
 .b-blog__article{
-	margin-left: 20px;
-	margin-right: 20px;
+	&:nth-child(odd){
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+	&:nth-child(even){
+		margin-right: 20px;
+	}
+
 	width: calc(100%/2 - 40px);
 	margin-bottom: 50px;
 }
@@ -662,7 +667,7 @@ margin-bottom: 20px;
 
 .b-blog__time{
 	color: #9698a3;
-	margin-right: 30px;
+	margin-bottom: 20px;
 }
 .b-blog__name{
 	max-width: 100%;
@@ -851,14 +856,20 @@ margin-bottom: 20px;
 .b-grid__inner{
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 .b-grid{
 	margin-bottom: 100px;
 }
 .b-grid__article{
-	margin-bottom: 50px;
-	width: calc(100%/2 - 50px);
-	margin: 25px;
+	width: calc(100%/2 - 40px);
+	&:nth-child(odd){
+	margin-right: 20px;
+		margin-left: 20px;
+	}
+	&:nth-child(even){
+	margin-right: 20px;
+	}
 }
 
 
@@ -965,7 +976,7 @@ margin-bottom: 20px;
 	text-align: center;
     max-width: 600px;
 	color: #000F46;
-   	padding: 63px 29px;
+   	padding: 50px;
     width: 600px;
 	background-color: #fff;
 	textarea{
@@ -995,12 +1006,10 @@ margin-bottom: 20px;
 }
 .popup__inner {
 	position: relative;
-    padding: 50px;
     position: relative;
     width: 100%;
     margin: auto;
     background-color: #fff;
-    border-radius: 10px;
     box-sizing: border-box;
     transform: translateY(10vh);
 }
@@ -1158,6 +1167,9 @@ margin-bottom: 20px;
 	font-size: 8px;
 }
 @media screen and (max-width: 1335px){
+.b-blog__name{
+	font-size: 18px;
+}
 .b-director__text{
 	right: 5%;
 }
@@ -1191,6 +1203,9 @@ margin-bottom: 20px;
 }
 
 @media screen and (max-width: 979px){
+.b-blog__name{
+	font-size: 24px;
+}
 .b-social--header{
 	visibility: hidden;
 }
@@ -1203,8 +1218,17 @@ margin-bottom: 20px;
 	margin-right: auto;	 
 }
 .b-blog__article{
+	&:nth-child(odd){
+		margin-right: auto;
+		margin-left: auto;
+	}
+	&:nth-child(even){
+		margin-left: auto;
+
+		margin-right: auto;
+	}
 	margin-bottom: 20px;
-	width: 100%;
+	width: 90%;
 }
 .b-blog{
 	text-align: center;
@@ -1214,16 +1238,12 @@ margin-bottom: 20px;
 
 }
 .b-reviews__content{
-	align-items: center;
-	min-height: 200px;
-
 }
 
 .b-reviews__item{
 	min-height: 150px;
 }
 .b-reviews__text {
-	margin-bottom: 20px;
 }
 .b-services__cards{
 	text-align: center;
@@ -1371,13 +1391,23 @@ margin-bottom: 20px;
 	text-align: center;
 }
 .b-grid__article{
-	width: 100%;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
+	&:nth-child(odd){
+	margin-right: auto;
+		margin-left: auto;
+	}
+	&:nth-child(even){
+	margin-right: auto;
+	}
 }
+
+
 .b-article__inner{
 	display: block;
 }
+
 .b-article__other{
 max-width: 100%;
 }
@@ -1403,6 +1433,9 @@ width: auto;
 	width: 100%;
 }
 }
+.b-owner__info{
+	margin-top: 20px;
+}
 .b-owner__inner{
 	display: block;
 }
@@ -1411,12 +1444,19 @@ width: auto;
 .b-footer__logo{
 	display: none;
 }
-.b-footer__social{
+.b-reviews__text{
+	flex-grow:1;
+	max-width: 500px;
+	font-size: 16px;
+    line-height: 1.55;
+    &:before{
+		left: 0;
+    }
 }
 }
 
 @media screen and (max-width: 768px){
-		.b-blog{
+	.b-blog{
     padding-top: 50px;
 	}
 	.b-reviews{
@@ -1435,29 +1475,32 @@ width: auto;
 	.b-director__text{
 		margin-top: 80px;
 	}
+	.b-reviews__content {
+    margin-left: 25px;
+	}
 	.page__subtitle{
-		font-size: 18px;
-		max-width: none;
-		margin-right: 20px;
-		margin-left: 20px;
+    margin-bottom: 40px;
+	font-size: 18px;
+	max-width: none;
+	margin-right: 20px;
+	margin-left: 20px;
 	}
 	.page__title{
-		font-size: 30px;
-		margin-left: 20px;
-		margin-right: 20px;
+	font-size: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
 	}
 	.b-services{
-		padding-bottom: 30px;
+	padding-bottom: 30px;
 	}
 	.b-contact__info *{
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-}
-.b-contact__info--adress{
+	}
+	.b-contact__info--adress{
 	padding-top: 20px;
-
-}
+	}
 .b-contact__info--time{
 	padding-bottom: 20px;
 }
@@ -1489,10 +1532,24 @@ width: auto;
 }
 
 @media screen and (max-width: 479px){
+	.b-article{
+		    margin-left: 10px;
+    margin-right: 10px;
+	}
+	.b-blog__article {
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
-	.card__title{
-		 padding-bottom: 20px;
-		 &:after{
+.b-reviews__subtitle{
+	margin-bottom: 10px;
+}
+.b-reviews__text{
+	font-size: 14px;
+}
+.card__title{
+	padding-bottom: 20px;
+		&:after{
 		 }
 	}
 	.card__list{

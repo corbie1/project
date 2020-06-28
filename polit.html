@@ -18,10 +18,10 @@
 			</a>
 			<nav class="nav header__nav">
 				<ul class="nav__menu">
-					<li class="nav__item"><a href="#about">Компания</a></li>
-					<li class="nav__item"><a href="#practice">Услуги</a></li>
-					<li class="nav__item"><a href="#blog">Блог</a></li>
-					<li class="nav__item"><a href="#contact">Контакты</a></li>
+					<li class="nav__item"><a href="index.html#about">Компания</a></li>
+					<li class="nav__item"><a href="index.html#practice">Услуги</a></li>
+					<li class="nav__item"><a href="index.html#blog">Блог</a></li>
+					<li class="nav__item"><a href="index.html#contact">Контакты</a></li>
 				</ul>
 			</nav>
 				<div class="b-social--header">
@@ -29,8 +29,8 @@
 					<a href="https://vk.com/prlfru"><img src="img/vk.svg"></a>
 					<a href="https://www.instagram.com/prlf.ru/"><img src="img/insta.svg"></a>
 					<div class="header__lang">
-						<a class="lang--ru lang--active" href="index.html">RU</a>
-						<a class="lang--eng" href="#">EN</a>
+						<a class="lang lang--ru lang--active" href="index.html">RU</a>
+						<a class="lang lang--eng" href="#">EN</a>
 					</div>
 				</div>
 		</div>
@@ -41,10 +41,10 @@
     			</label>
 
     			<ul class="menu__box">
-					<li class="nav__item--hamb"><a href="#about">Компания</a></li>
-					<li class="nav__item--hamb"><a href="#practice">Услуги</a></li>
-					<li class="nav__item--hamb"><a href="#contact">Контакты</a></li>
-					<li class="nav__item--hamb"><a href="#blog">Блог</a></li>
+					<li class="nav__item--hamb"><a href="index.html#about">Компания</a></li>
+					<li class="nav__item--hamb"><a href="index.html#practice">Услуги</a></li>
+					<li class="nav__item--hamb"><a href="index.html#contact">Контакты</a></li>
+					<li class="nav__item--hamb"><a href="index.html#blog">Блог</a></li>
 					<li class="nav__item--hamb"><a href="#">EN</a></li>
 					<li class="nav__item--hamb"><a href="tel:84951277083">+7 495 127 70 83</a></li>
 				</ul>
@@ -105,12 +105,10 @@
 		</div>
 	</div>
 
-
-	
-	<div class="b-footer">
+<div class="b-footer">
 		<div class="b-footer__inner">
-			<a href="index.html">
-			<img class="b-footer__logo" src="img/logo-bely.png">
+			<a class="b-footer__logo" href="index.html">
+				<img src="img/logo-bely.png">
 			</a>
 			<div class="b-footer__menu">
 					<ul>
@@ -137,7 +135,46 @@
 		</div>
 	</div>
 
-
+<div class="popup1">
+<div class="popup__inner callback__popup">
+	<form id="form-1">
+	<fieldset style="border:0;">
+		<div class="p-cta__close popup__close closeTrigger" title="Закрыть"></div>
+		<div class="b-popup__content">
+			<div class="b-popup__text">
+				<div class="b-popup__title">Остались вопросы?</div>
+				<div class="b-popup__subtitle">Вы всегда можете задать любой интересующий вас вопрос, и главное получить на него ответ</div>
+			</div>
+			<div class="b-popup__fields">
+				<div class="b-popup__field">
+					<p>E-mail</p>
+					<input class="b-popup__mail form" type="mail" name="mail" placeholder="Ваш E-mail">
+				</div>
+				<div class="b-popup__field">
+					<p>Имя</p>
+					<input class="b-popup__name form" type="text" name="name" placeholder="Ваше имя">
+				</div>
+				<div class="b-popup__field">
+					<p>Телефон</p>
+					<input class="b-popup__number form" type="tel" name="tel" placeholder="Ваш номер телефона">
+				</div>
+				<div class="b-popup__field">
+					<p>Вопрос</p>
+					<textarea ></textarea>
+				</div>
+			   <div class="checkbox">
+    			<input type="checkbox" id="checkbox_1">
+    			<label for="checkbox_1"> Я прочитал <a class="checkbox__link" href="polit.html">Политику конфиденциальности</a> и согласен с условиями</label>
+				</div>
+				</div>
+    			 <button  class="b-popup__button button">
+            			Отправить
+            	</button>
+        </div>
+	</fieldset>
+	</form>
+</div>
+</div>
 
 
 </body>
