@@ -135,6 +135,10 @@ body {
   height: auto;
 }
 
+.header-social {
+  margin-right: 20px;
+}
+
 .header__lang {
   font-size: 20px;
   font-weight: 300;
@@ -559,7 +563,7 @@ body {
 
 .b-owner__title {
   margin-top: 28px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.55;
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 700;
@@ -1012,7 +1016,7 @@ body {
 }
 
 .b-footer__social {
-  align-items: center;
+  align-items: flex-end;
   display: flex;
   flex-direction: column;
 }
@@ -1644,6 +1648,7 @@ body {
   .card__title {
     padding-bottom: 20px;
   }
+
   .card__list {
     font-size: 14px;
   }

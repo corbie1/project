@@ -55,6 +55,51 @@ myMapArchangelsk.geoObjects.add(myPlacemarkArch);
 
 
 
+var intViewportHeight = window.innerHeight;
+
+
+
+jQuery(function($) {
+
+    const section = $('.block'),
+          nav = $('.nav__menu'),
+          navHeight = nav.outerHeight(); // получаем высоту навигации 
+
+    // поворот экрана 
+    window.addEventListener('orientationchange', function () {
+      navHeight = nav.outerHeight();
+    }, false);
+    $(window).on('scroll', function () {
+        const position = $(this).scrollTop();
+        section.each(function () {
+            const top = $(this).offset().top - navHeight - 5,
+                  bottom = top + $(this).outerHeight();
+            if (position >= top && position <= bottom) {
+                nav.find('a').removeClass('active');
+                section.removeClass('active');
+
+                $(this).addClass('active');
+                nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+            }
+        });
+    });
+
+       $(".nav__menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
+    $(".arrow__next-block").on("click", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
+
+});
+
+
 
 $(document).ready(function(){
 $('.b-reviews__slick').slick({
