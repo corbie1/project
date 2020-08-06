@@ -535,11 +535,15 @@ margin-bottom: 20px;
 	margin: auto;
 	width: auto;
 	max-width: 200px;
-	max-height: 200px;
+	max-height: 110px;
+	
 }
 
 .b-reviews{
 	margin-top: 100px;
+}
+.b-reviews__subtitle{
+	margin-bottom: 10px;
 }
 .b-reviews__photo{
 	width: 70px;
