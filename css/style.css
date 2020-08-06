@@ -606,6 +606,7 @@ body {
 }
 
 .b-slick__item {
+  height: 110px;
   justify-content: center;
 }
 
