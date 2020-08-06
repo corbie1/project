@@ -608,6 +608,7 @@ body {
 .b-slick__item {
   height: 110px;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .slick-initialized .slick-slide {
