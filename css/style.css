@@ -611,6 +611,10 @@ body {
   margin-bottom: 30px;
 }
 
+.b-partner__slick {
+  padding-left: 20px;
+}
+
 .slick-initialized .slick-slide {
   display: flex;
   align-items: center;
