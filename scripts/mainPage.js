@@ -102,6 +102,41 @@ jQuery(function($) {
 
 
 $(document).ready(function(){
+  $('.b-partner__slick').slick({
+    infinite: true,
+    speed: 400,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    dots: true,
+    autoplay: false,
+     customPaging : function(slider, i) {
+                  return '<div class="dot"></div>';
+                  },
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1169,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
 $('.b-reviews__slick').slick({
   infinite: true,
   slidesToShow: 2,
