@@ -369,7 +369,7 @@ body {
   background-position: top;
   background-repeat: no-repeat;
   height: 415px;
-  width: calc(100%/3 - 40px);
+  width: calc(100% / 3 - 40px);
 }
 .b-services__card:hover .card__list {
   opacity: 1;
@@ -471,7 +471,7 @@ body {
 }
 
 .b-contact__card {
-  width: calc(100%/2);
+  width: calc(100% / 2);
 }
 
 .b-contact {
@@ -765,7 +765,7 @@ body {
 }
 
 .b-blog__article {
-  width: calc(100%/2 - 40px);
+  width: calc(100% / 2 - 40px);
   margin-bottom: 50px;
 }
 .b-blog__article:nth-child(odd) {
@@ -808,7 +808,7 @@ body {
   transition: 0.4s;
 }
 .b-blog__name:hover {
-  color: #1D416D;
+  color: #1d416d;
 }
 
 .button {
@@ -830,7 +830,7 @@ body {
   text-transform: uppercase;
 }
 .button:hover {
-  background-color: #1D416D;
+  background-color: #1d416d;
   color: #fff;
 }
 
@@ -987,7 +987,7 @@ body {
 }
 
 .b-grid__article {
-  width: calc(100%/2 - 40px);
+  width: calc(100% / 2 - 40px);
 }
 .b-grid__article:nth-child(odd) {
   margin-right: 20px;
@@ -1083,6 +1083,124 @@ body {
   max-width: 780px;
 }
 
+.checklist {
+  margin-top: 100px;
+  color: #000f46;
+}
+.checklist__content {
+  display: flex;
+}
+.checklist__image {
+  width: 100%;
+  height: auto;
+}
+.checklist__title {
+  max-width: 100%;
+}
+.checklist__form {
+  margin-top: 50px;
+}
+
+.form__field {
+  position: relative;
+  margin-bottom: 20px;
+}
+.form__field .form__input {
+  padding: 20px;
+  padding-left: calc(3.6em + 1em);
+}
+.form input {
+  border: 1px solid #000;
+  width: 380px;
+}
+.form__mail {
+  position: relative;
+}
+.form__mail:before {
+  content: "";
+  position: absolute;
+  top: calc(3.9em / 2 + 1px - 0.7em);
+  left: 20px;
+  width: 25px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/mail.png");
+}
+.form__name {
+  position: relative;
+}
+.form__name:before {
+  content: "";
+  position: absolute;
+  top: calc(3.9em / 2 + 1px - 0.7em);
+  left: 20px;
+  width: 25px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/name.png");
+}
+.form__number {
+  position: relative;
+}
+.form__number:before {
+  content: "";
+  position: absolute;
+  top: calc(3.9em / 2 + 1px - 0.7em);
+  left: 20px;
+  width: 25px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/phone.png");
+}
+.form__question {
+  position: relative;
+  box-sizing: border-box;
+}
+.form__question textarea {
+  padding-top: calc(3.9em / 2 + 1px - 0.7em);
+  padding-left: calc(3.6em + 1em);
+}
+.form__question:before {
+  content: "";
+  position: absolute;
+  top: calc(3.9em / 2 + 1px - 0.7em);
+  left: 20px;
+  width: 25px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/pencil.png");
+}
+.form__placeholder {
+  position: absolute;
+  top: calc(3.6em / 2 + 1px - 0.7em);
+  margin-left: calc(2.6em + 1em);
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), top 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #fff;
+  box-sizing: border-box;
+  pointer-events: none;
+  font-size: 18px;
+}
+.form .focused {
+  top: -0.5em;
+  transform: scale(0.9);
+}
+.form__text {
+  max-width: 60%;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.form .button {
+  margin-top: 10px;
+}
+
+.b-popup__field input {
+  padding-left: calc(3.6em + 1em);
+}
+
 .b-popup__title {
   font-weight: 700;
   font-size: 28px;
@@ -1097,7 +1215,7 @@ body {
   border: 1px solid #000;
   text-align: center;
   max-width: 600px;
-  color: #000F46;
+  color: #000f46;
   padding: 50px;
   width: 600px;
   background-color: #fff;
@@ -1129,7 +1247,6 @@ body {
 
 .popup__inner {
   position: relative;
-  position: relative;
   width: 100%;
   margin: auto;
   background-color: #fff;
@@ -1144,7 +1261,8 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.popup__close:after, .popup__close:before {
+.popup__close:after,
+.popup__close:before {
   content: "";
   position: absolute;
   top: 50%;
@@ -1175,21 +1293,11 @@ body {
 
 .b-popup__text {
   text-align: center;
-}
-
-.b-popup__fields {
-  text-align: left;
+  margin-bottom: 20px;
 }
 
 .b-popup__field {
-  padding-top: 20px;
-  font-size: 18px;
-}
-.b-popup__field p {
-  padding-bottom: 5px;
-}
-.b-popup__field .form {
-  padding: 10px;
+  position: relative;
 }
 
 .checkbox {
@@ -1198,7 +1306,7 @@ body {
   box-sizing: border-box;
 }
 .checkbox a {
-  color: #000F46;
+  color: #000f46;
 }
 
 .checkbox input[type=checkbox] {
@@ -1222,14 +1330,14 @@ body {
 
 /*Outer box of the fake checkbox*/
 .checkbox label::before {
-  background-color: #Fff;
+  background-color: #fff;
   height: 16px;
   width: 16px;
   border: 1px solid;
   left: -3px;
   /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
-   *to vertically center it.
-   */
+     *to vertically center it.
+     */
   top: 3px;
 }
 
@@ -1292,7 +1400,7 @@ body {
   }
 
   .b-services__card {
-    width: calc(100%/2 - 40px);
+    width: calc(100% / 2 - 40px);
   }
   .b-services__card:hover .card__list {
     opacity: 1;
@@ -1312,7 +1420,7 @@ body {
   }
 
   .b-advantages__card {
-    width: calc(100%/3);
+    width: calc(100% / 3);
     margin-left: 0px;
     margin-right: 0px;
   }
