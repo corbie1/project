@@ -1629,15 +1629,24 @@ body {
   }
   .form__fields{
     text-align: center;
+    max-width: 360px;
+    margin: auto;
   }
   .form__field {
     &:before{
       display: none;
     }
+    
+  }
+  .form__field .form__input{
+    padding-left: calc(2.4em + 1em);
   }
   .callback__popup{
     .form__placeholder{
       margin-left: calc(0.4em + 1em);
+    }
+    .form__input{
+      padding-left: calc(1em + 1em);
     }
   }
   .checklist__form{
